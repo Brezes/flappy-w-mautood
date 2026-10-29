@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="A pixel-art owl arcade game.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Flappy W·Mautood</title>
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Flappy W·Mautood">
+    <meta property="og:description" content="A pixel-art owl arcade game.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Flappy W·Mautood">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flappy W·Mautood">
+    <meta name="twitter:description" content="A pixel-art owl arcade game.">
+
+    <style>
+      @font-face {
+        font-family: 'Flappy';
+        src: url('/assets/flappy-font.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        overscroll-behavior: none;
+        -webkit-overflow-scrolling: none;
+        touch-action: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+      }
+
+      body {
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Arial', sans-serif;
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+      }
+
+      #game-container {
+        position: relative;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      canvas {
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        will-change: transform;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        touch-action: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="game-container"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+
+</html>

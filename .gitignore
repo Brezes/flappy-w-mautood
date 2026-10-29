@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Project-specific development artifacts
+backups/
+design-reference/
+
+# Internal development instructions
+/AGENTS.md
+
+# Legacy showcase images not used by the game or README
+/flappy-js.png
+/flappy-new.png
+/opengraph.png
+
+# Test and tool caches
+coverage/
+.vite/
+.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+.wrangler/
